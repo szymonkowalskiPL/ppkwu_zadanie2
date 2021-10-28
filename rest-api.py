@@ -18,6 +18,11 @@ def checkString():
     otherCharacters = stringLen - (upper+lower+numbers)
     print(upper, lower, numbers, otherCharacters)
     
-    return string
+    return jsonify(
+        upper_case=upper,
+        lower_case=lower,
+        numbers=numbers,
+        special_characters=otherCharacters,
+    )
 
 app.run()
