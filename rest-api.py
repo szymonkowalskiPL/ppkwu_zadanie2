@@ -7,6 +7,7 @@ def checkString():
     
     string = request.args.get('string')
     print(string)
-    
+
+    return string
 
 app.run()
