@@ -12,7 +12,11 @@ def checkString():
     upper = len(re.findall(r'[A-Z]',string))
     lower = len(re.findall(r'[a-z]',string))
     numbers = len(re.findall(r'[0-9]',string))
-    print(upper, lower, numbers)
+
+    stringLen=len(string)
+
+    otherCharacters = stringLen - (upper+lower+numbers)
+    print(upper, lower, numbers, otherCharacters)
     
     return string
 
